@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.fun {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+body {
+  background-color: lightblue;
+}
+.blinky {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  70% {
+    opacity: 0;
+  }
+}
+
+.header {
+  text-align: center;
+}
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+}
+
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+</style>
+</head>
+<header class="header">
+
+  <img src="https://media3.giphy.com/media/cp3EXAJY259ctiQP9K/200w.webp?cid=ecf05e47n6613fya3hgguab89td7offbhp3jb4kj1iprsvdc&rid=200w.webp&ct=g" alt="Banner Image"/>
+
+</header>
+<marquee direction = "right">
+  <h1 class="rainbow-text">welcome to the world wide web</h1>
+</marquee>
+  <marquee>
+  <h2 class = "blinky">welcome to my webpage!!   welcome to my webpage!!    welcome to my webpage!! </h2>
+</marquee>
+  <p>this is a webpage.   </p>
+
+  <p>it is inspired by the austere but also quirky  design aesthetic of
+    <a href = "https://www.mentalfloss.com/article/53792/17-ancient-abandoned-websites-still-work">the early web.</a> </p>
+
+<br>
+
+  <form >
+      <fieldset>
+          <legend class = "fun">how do you like this website??</legend>
+          <input  type="checkbox" >it's great<br>
+          <input type="checkbox" >it could use some work<br>
+          <input type="checkbox">other   <br>
+          <br>
+          <textarea name="comment" form="usrform">if you have comments please type  here...</textarea>
+          <br>
+
+          <input type="submit" value="Submit now" />
+
+      </fieldset>
+  </form>
+
+
+
+
+<footer class = "footer">
+  <br>
+website by Chris O'Brien
+
+</html>

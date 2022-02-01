@@ -13,5 +13,8 @@ def randomnumber():
 def index():
   return "<h1>Hello World from Chris O'Brien's computer !</h1>"
 
-
+@app.route("/coolsite")
+def coolsite():
+    return render_template("coolsite.html")
+    
 app.run(host="127.0.0.1",port=5000,debug=True)
