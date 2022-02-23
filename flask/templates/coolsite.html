@@ -62,20 +62,20 @@ body {
 
 <br>
 
-  <form >
+  <form method="POST" >
       <fieldset>
           <legend class = "fun">how do you like this website??</legend>
-          <input  type="checkbox" >it's great<br>
-          <input type="checkbox" >it could use some work<br>
-          <input type="checkbox">other   <br>
-          <br>
-          <textarea name="comment" form="usrform">if you have comments please type  here...</textarea>
-          <br>
-
+          <input  type="radio" name="choice" value = "great" >it's great<br>
+          <input type="radio" name="choice" value="meh">it could use some work<br>
+          <input type="radio" name="choice" value="other">other   <br>
           <input type="submit" value="Submit now" />
 
-      </fieldset>
-  </form>
+        </fieldset>
+
+    </form>
+          <a href="/comments">{{message}}</a>
+
+
 
 
 
@@ -83,5 +83,6 @@ body {
 <footer class = "footer">
   <br>
 website by Chris O'Brien
+<a href="/">There's no place like home.</a>
 
 </html>
