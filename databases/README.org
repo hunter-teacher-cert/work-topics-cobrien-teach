@@ -1,3 +1,6 @@
-* Last Name:
-* First Name:
+* Last Name: chris 
+* First Name: obrien
+  See sql_assignment.ipynb for homework and asyn assignment.
+
+  Code can also be found here: https://colab.research.google.com/drive/1HcRlgj9WSgA7phn-YiYfdzFS8-0i37zp#scrollTo=5LM1VuNzwyVC
 
