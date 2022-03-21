@@ -13,11 +13,11 @@ dependent_clause_markers = ["although", "even if", "until", "when", "whether", "
 """
 Simple context-free Phrase Structure grammar
 
-S -> NP VP
+simpleS -> NP VP
 NP -> article noun
 VP -> verb NP
-S -> S conjunction S
-S -> S dependent_clause_marker S
+S -> simpleS conjunction simpleS || simpleS dependent_clause_marker simpleS || simpleS
+
 
 
 
