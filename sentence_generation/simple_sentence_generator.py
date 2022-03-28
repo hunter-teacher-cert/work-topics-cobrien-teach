@@ -9,16 +9,16 @@ verbs = ["cooks", "blows", "bounces", "walks", "jumps", "calls", "runs", "abides
 #NOTE modified list of conjunctions 'for' is a preposition not a conjunction! 'nor' is complicated because of it's semantics ( it must appear in
 #the scope of a negation operator).
 conjunctions = ["and", "or", "but", "yet", "so"]
-#removed "in order to", since this takes a verb phrase rather than sentential argument
-dependent_clause_markers = ["although", "even if", "until", "when", "whether", "while"]
+#"in order to" removed (applies to VPs not sentences). changed "whether" to "whenver" since former only goes with certain verbs.
+dependent_clause_markers = ["although", "even if", "until", "when", "whenever", "while"]
 
 """
-Simple context-free  grammar for a fragment of English. "||" represents disjunction.
+Simple context-free  grammar for a fragment of English. "||" represents disjunction. NP = Noun Phrase, VP = Verb Phrases
 
 simpleS -> NP VP
 NP -> article noun
 simpleVP -> verb NP || verb
-VP -> simpleVP + dependent_clause_marker + S || simpleVP + "in order to" + simpleVP || simpleVP
+VP -> simpleVP + dependent_clause_marker + S || simpleVP
 S -> simpleS conjunction simpleS || simpleS
 
 
@@ -40,11 +40,9 @@ def simpleVP():
         return random.choice(verbs)
 
 def VP():
-    my_choice = random.randrange(0,3)
+    my_choice = random.randrange(0,2)
     if my_choice == 0:
         return simpleVP() + " " + random.choice(dependent_clause_markers) + " " + simpleS();
-    elif my_choice == 1:
-        return simpleVP() + " in order to " + simpleVP()
     else:
         return simpleVP()
 def S():
