@@ -1,3 +1,3 @@
-* Last Name:
-* First Name:
-
+* Last Name:O'Brien
+* First Name: Chris
+Run hw.py to see connected cube
