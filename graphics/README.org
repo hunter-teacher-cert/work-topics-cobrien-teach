@@ -1,3 +1,5 @@
 * Last Name:O'Brien
 * First Name: Chris
-Run hw.py to see connected cube
+Run hw_cube.py to see connected cube.
+
+Run hw_prism.py to see a triangular prism.
